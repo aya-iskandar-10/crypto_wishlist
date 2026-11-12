@@ -1,0 +1,19 @@
+name: whishlist
+description: A simple crypto wishlist app using Riverpod (MVC).
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1   # keep 2.x: ChangeNotifierProvider is not in the main import of 3.x
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
