@@ -7,7 +7,7 @@ class CryptoListView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final cryptos = ref.watch(cryptoProvider);
+    final cryptos = ref.watch(cryptoProvider).cryptos;
     final wishlist = ref.watch(wishlistProvider);
 
     return Scaffold(
@@ -26,9 +26,9 @@ class CryptoListView extends ConsumerWidget {
         ],
       ),
       body: ListView.builder(
-        itemCount: cryptos.cryptos.length,
+        itemCount: cryptos.length,
         itemBuilder: (context, index) {
-          return CryptoTile(crypto: cryptos.cryptos[index]);
+          return CryptoTile(crypto: cryptos[index]);
         },
       ),
     );

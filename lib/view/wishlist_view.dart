@@ -11,8 +11,7 @@ class WishlistView extends ConsumerWidget {
     final wishlist = ref.watch(wishlistProvider);
 
     // keep only the coins that are in the wishlist
-    final favorites =
-        cryptos.where((c) => wishlist.isFavorite(c.symbol)).toList();
+    final favorites =  cryptos.where((c) => wishlist.isFavorite(c.symbol)).toList();
 
     return Scaffold(
       appBar: AppBar(title: const Text('Wishlist')),

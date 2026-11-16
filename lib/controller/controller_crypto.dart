@@ -15,5 +15,6 @@ class ControllerCrypto extends ChangeNotifier {
     Crypto(rank: 10, name: 'Zcash', symbol: 'ZEC', price: 1249.39, change24h: 1.91),
     Crypto(rank: 11, name: 'Hyperliquid', symbol: 'HYPE', price: 81.64, change24h: -1.75),
     Crypto(rank: 12, name: 'Dogecoin', symbol: 'DOGE', price: 0.08, change24h: 0.01),
+    Crypto(rank: 13, name: 'Cardano', symbol: 'ADA', price: 1.20, change24h: -0.50),
   ];
 }
